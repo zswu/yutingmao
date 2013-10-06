@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>News</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<!--[if IE 9]>
+		<link rel="stylesheet" type="text/css" href="css/ie9.css" />
+	<![endif]-->
+	<!--[if IE 8]>
+		<link rel="stylesheet" type="text/css" href="css/ie8.css" />
+	<![endif]-->
+	<!--[if IE 7]>
+		<link rel="stylesheet" type="text/css" href="css/ie7.css" />
+	<![endif]-->
+</head>
+<body>
+	<div id="header">
+		<div>
+			<div id="logo">
+				<a href="index.html"><img src="未命名.JPG" alt="Logo" width="236" height="74" /></a>			</div>
+			<div id="navigation">
+				<div>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li class="current"><a href="about.html">About us</a></li>
+						<li><a href="contact.html">Contact Us</a></li>
+						<li><a href="video.html">Video</a></li>
+						<li><a href="instrument.html">Instrument</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="content">
+	  <div class="section">
+			<div>
+				<a class="selected" href="upload_video.html">Upload Video</a>
+				<a href="upload_instrument.html">Upload Instrunment</a>
+				<a href="upload_3d_model">3D model</a>
+				<h4></h4>
+			</div>
+			
+			
+			
+			<div class="figure">
+			  <p>   
+		      <form action="upload_video.php" method="post" enctype="multipart/form-data">
+                 <p>Title 
+                   <input type="text" name="goods_title" />
+                   Video Description 
+                   <textarea name="goods_introduce" cols="40" rows="4"></textarea>
+                <p><br />
+                  Tags 
+                  <input type="text" name="tag1" /> 
+                  <input type="text" name="tag2" />  
+                  <input type="text" name="tag3" />
+               
+                <p>Related Instruments (Instruments names):</p>
+                <p>
+                  <input type="text" name="in_name1" />  
+                  <input type="text" name="in_name2" />  
+                  <input type="text" name="in_name3" />
+                </p>
+                <p>Stage 0: Title: 
+        <input type="text" name="s0_title" />                
+                <p> 
+                      Start time (hh:mm:ss):  
+                        <input type="text" name="s0_start_1" size="2"/> 
+                   :
+                   <input type="text" name="s0_start_2" size="2"/> 
+                   :
+                   <input type="text" name="s0_start_3" size="2"/> 
+               
+			    End time:  
+                <input type="text" name="s0_end_1" size="2"/> 
+                :
+                <input type="text" name="s0_end_2" size="2"/> 
+                :
+                <input type="text" name="s0_end_3" size="2"/>
+                <br>
+                Description: 
+                     <textarea name="s0_de" cols="70" rows="2"></textarea>
+		        
+                <p>Stage 1: Title: 
+                    <input type="text" name="s1_title" /> 
+                <p>Start time (hh:mm:ss):  
+                   <input type="text" name="s1_start_1" size="2"/> 
+                   :
+                   <input type="text" name="s1_start_2" size="2"/> 
+                   :
+                   <input type="text" name="s1_start_3" size="2"/>
+                   End time:  
+                   <input type="text" name="s1_end_1" size="2"/> 
+                   :
+                   <input type="text" name="s1_end_2" size="2"/> 
+                   :
+                   <input type="text" name="s1_end_3" size="2"/>
+                   <br>
+                   Description: 
+                       <textarea name="s1_de" cols="70" rows="2"></textarea>
+					   
+			       <p>Stage 2: Title: 
+                    <input type="text" name="s2_title" /> 
+                <p>Start time (hh:mm:ss):   
+                  <input type="text" name="s2_start_1" size="2"/> 
+                  :
+                  <input type="text" name="s2_start_2" size="2"/> 
+                  :
+                  <input type="text" name="s2_start_3" size="2"/>
+                  End time:  
+                  <input type="text" name="s2_end_1" size="2"/> 
+                  :
+                  <input type="text" name="s2_end_2" size="2"/> 
+                  :
+                  <input type="text" name="s2_end_3" size="2"/>
+                  <br>
+                  Description: 
+                    <textarea name="s2_de" cols="70" rows="2"></textarea>
+					   
+			       <p>Stage 3: Title: 
+                    <input type="text" name="s3_title" /> 
+                <p>Start time (hh:mm:ss):   
+                  <input type="text" name="s3_start_1" size="2"/> 
+                  :
+                  <input type="text" name="s3_start_2" size="2"/> 
+                  :
+                  <input type="text" name="s3_start_3" size="2"/>
+                  End time:  
+                  <input type="text" name="s3_end_1" size="2"/> 
+                  :
+                  <input type="text" name="s3_end_2" size="2"/> 
+                  :
+                  <input type="text" name="s3_end_3" size="2"/>
+                  <br>
+                  Description: 
+                    <textarea name="s3_de" cols="70" rows="2"></textarea>
+					   
+			       <p>Stage 4: Title: 
+                    <input type="text" name="s4_title" /> 
+                <p>Start time (hh:mm:ss):   
+                  <input type="text" name="s4_start_1" size="2"/> 
+                  :
+                  <input type="text" name="s4_start_2" size="2"/> 
+                  :
+                  <input type="text" name="s4_start_3" size="2"/> 
+                  End time:  
+                  <input type="text" name="s4_end_1" size="2"/> 
+                  :
+                  <input type="text" name="s4_end_2" size="2"/> 
+                  :
+                  <input type="text" name="s4_end_3" size="2"/> 
+                  <br>
+                  Description: 
+                    <textarea name="s4_de" cols="70" rows="2"></textarea>
+					  
+                   <p>Attach video  
+                   <input type="file" name="uploadfile" />
+                   <br />
+                   <br />
+                   <input name="submit" type="submit" value="submit" />
+                
+		      </form>		  </p>
+			  <p>&nbsp;</p>
+			  <p>&nbsp;</p>
+			  <p>&nbsp;</p>
+			  <p>&nbsp;</p>
+			  <p>&nbsp;</p>
+			</div>
+	  </div>
+		<div>
+			<p>jdkflsajdkfj skdjf kasdjfl asjdfkljsa dfjksd flksadj f</p>
+		</div>
+	</div>
+	<div id="footer">
+		<div>
+			<div class="first">
+				<h3>Surgical Techique Online</h3>
+				<p>sdjfkl sdjflsf sdfjsdlf sakd f</p>
+				<div>
+					<p>Telephone. : <span>12345678-90</span></p>
+					<p>Fax : <span>23456789-01</span></p>
+					<p>Email : <span>wmaoyuting@gmail.com</span></p>
+				</div>
+			</div>
+			<div>
+				<h3>Get Social with us!</h3>
+				<p>jsdkfl asjdlf sjdlfj asldfj lsa </p>
+				<div>
+					<a href="http://facebook.com/freewebsitetemplates" class="facebook" target="_blank"></a>
+					<a href="http://twitter.com/fwtemplates" class="twitter" target="_blank"></a>
+					<a href="#" class="linked-in"></a>
+				</div>
+			</div>
+			<div>
+				<h3>Share your thoughts!</h3>
+				<p>sdjaklf sajdfl ksajd flakjsdlkf jalsjdf </p>
+				<form action="#">
+					<label for="subscribe"><input type="text" id="subscribe" maxlength="30" value="email address" /></label>
+					<input class="submit" type="submit" value="" />
+				</form>
+				<p>Copyright &copy; 2013 Yuting Mao <br /> All rights reserved</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

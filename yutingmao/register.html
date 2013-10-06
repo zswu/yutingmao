@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!-- Website template by freewebsitetemplates.com -->
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>Register</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<!--[if IE 9]>
+		<link rel="stylesheet" type="text/css" href="css/ie9.css" />
+	<![endif]-->
+	<!--[if IE 8]>
+		<link rel="stylesheet" type="text/css" href="css/ie8.css" />
+	<![endif]-->
+	<!--[if IE 7]>
+		<link rel="stylesheet" type="text/css" href="css/ie7.css" />
+	<![endif]-->
+</head>
+<body>
+	<div id="header">
+		<div><a href="index.html"><img src="../../../未命名.JPG" alt="Image" width="116" height="82" /></a>
+			<div id="logo">
+				<a href="index.html"></a>			</div>
+			<div id="navigation">
+				<div>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li class="current"><a href="about.html">About us</a></li>
+						<li><a href="contact.html">Contact Us</a></li>
+						<li><a href="video.html">Video</a></li>
+						<li><a href="instrument.html">Instrument</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="content">
+		<div>
+			<h3>Register and account</h3>
+			<p>All the fields that followed by a asterisk are required!</p>
+		
+			<form action="reg_handle.php" method="post"  id="register">
+				<div class="first">
+					<fieldset>
+						<label for="name"><strong>*User Name:</strong></label>
+						<input type="text" maxlength="55" name="username" class="inputtext" />
+<label for="email"><strong>*Email:</strong></label>
+						<input type="text" maxlength="55" name="email" class="inputtext" />
+						<label for="password"><strong>*Password:</strong></label>
+						<input type="password" maxlength="55" name="password" class="inputtext" />
+						<label for="confirmpass"><strong>*Confirm Password:</strong></label>
+						<input type="password" maxlength="55" name="confirmpass" class="inputtext" />
+						<div>
+						  <label for="newsletter"></label>
+							<label class="terms" for="terms"><input type="checkbox" name="terms" /><span><a href="term_and_condition.html">I agree to the Terms and Conditions</a></span></label>
+						</div>
+					</fieldset>
+				</div>
+				<div>
+					<fieldset>
+						<label for="completename"><strong>Real name:</strong></label>
+						<input type="text" maxlength="55" name="realname" class="inputtext" />
+						<label for="address"><strong>Occupation:</strong></label>
+						<input type="text" maxlength="55" name="occupation" class="inputtext" />
+						<label for="phone"><strong>Phone Number:</strong></label><input type="text" maxlength="55" name="phone" class="inputtext" />
+						<label for="billing"><strong>Address:</strong></label>
+						<input type="text" maxlength="55" name="address" class="inputtext" />
+						<label for="city"><strong>City:</strong></label>
+						<label class="zipcode" for="zipcode"><strong>Country:</strong></label>
+						<input type="text" maxlength="30" name="city" id="city"/> 
+						<input type="text" maxlength="30" name="country" id="zipcode" />
+					</fieldset>
+				</div>
+				<input type="submit" value="" id="createaccount" />
+			</form>
+		</div>
+	</div>
+	<div id="footer">
+	  <div></div>
+	</div>
+</body>
+</html>
